@@ -1,0 +1,95 @@
+:root {
+  --bg-color: #f9a743;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.bg-warning {
+  background-color: var(--bg-color) !important;
+}
+.w-fc {
+  width: fit-content !important;
+}
+.btn{
+  box-shadow: 0px 5px 15px  rgba(249, 167, 67, 0.5) !important;
+}
+/* nav */
+.navbar-brand {
+  font-size: 25px;
+}
+/* /nav */
+/* hero */
+h1.title {
+  font-size: 60px;
+}
+p {
+  font-weight: 300;
+  margin: 0;
+}
+/* /hero */
+/* slider */
+.item {
+  position: relative;
+}
+.item a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  transition: all 0.3s;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.item:hover .img-overlay {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+/* /slider */
+/* call-to-action */
+.call-to-action {
+  background-image: url(../images/call-to-action.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+}
+.call-to-action input{
+  border-radius: 50px 0 0 50px;
+}
+.call-to-action button {
+  border-radius: 0 50px 50px 0;
+}
+/* /call-to-action */
+/* review */
+.author-details > img {
+  width: 50px;
+} 
+/* /review */
+/* footer */
+footer{
+  background: #f4f4f4;
+}
+footer a p:hover,
+footer a:hover{
+  text-decoration: underline;
+}
+/* /footer */
